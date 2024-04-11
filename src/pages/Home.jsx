@@ -11,13 +11,13 @@ const Home = () => {
   }, [])
 
   const loadUsers = async() =>{
-    const url = "https://fullstack-backend-89ho.onrender.com//user";
+    const url = "https://fullstack-backend-l6t3.onrender.com/user";
     const result = await axios.get(url);
     setUsers(result.data);  
   }
 
   const deleteUser = async(id) =>{
-    await axios.delete(`https://fullstack-backend-89ho.onrender.com//user/${id}`);
+    await axios.delete(`https://fullstack-backend-l6t3.onrender.com/user/${id}`);
     loadUsers();
   }
   

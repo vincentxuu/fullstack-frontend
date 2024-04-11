@@ -19,7 +19,7 @@ const AddList = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("https://fullstack-backend-89ho.onrender.com/user", user);
+    await axios.post("https://fullstack-backend-l6t3.onrender.com/user", user);
     navigate("/");
   };
 

@@ -16,7 +16,7 @@ const ViewUser = () => {
   }, []);
 
   const loadUser = async () => {
-    const result = await axios.get(`https://fullstack-backend-89ho.onrender.com/user/${id}`);
+    const result = await axios.get(`https://fullstack-backend-l6t3.onrender.com/user/${id}`);
     setUser(result.data);
   };
   return (

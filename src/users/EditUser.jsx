@@ -25,12 +25,12 @@ const EditUser = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.put(`https://fullstack-backend-89ho.onrender.com/user/${id}`, user);
+    await axios.put(`https://fullstack-backend-l6t3.onrender.com/user/${id}`, user);
     navigate("/");
   };
 
   const loadUser = async () =>{
-    const result = await axios.get(`https://fullstack-backend-89ho.onrender.com/user/${id}`, user);
+    const result = await axios.get(`https://fullstack-backend-l6t3.onrender.com/user/${id}`, user);
     setUser(result.data);
   }
 
